@@ -149,6 +149,34 @@ export CPLUS_INCLUDE_PATH=$CUDA_DIR/include:$CPLUS_INCLUDE_PATH
 export C_INCLUDE_PATH=$CUDA_DIR/include:$C_INCLUDE_PATH
 ```
 
+### Compiling Futhark on the GPU servers
+
+The network file system used by SCIENCE-IT on the GPU servers has a
+bug which makes the `open()` syscall not set the executable bit
+properly on new files for some users.  It can be set subsequently with
+the `chmod()` syscall, but the `ld.gold` linker that GHC uses by
+default quite reasonably expects that basic system calls work.  The
+end result is that `ld.gold` produces non-executable binaries, and
+this makes GHC malfunction.  The suggested workaround is to
+transparently replace `ld.gold` with the older linker `ld`, which
+happens to implement file creation by separately calling `chmod()`.
+You do this by ensuring `$HOME/.local/bin` is first on your `PATH`,
+and then symlinking:
+
+```
+$ ln -s `which ld` $HOME/.local/bin/ld.gold
+```
+
+This will make GHC (and all other tools) use `ld` instead of `ld.gold`.
+
+* **Yes**, it is absolutely ridiculous that basic filesystem
+  operations don't work in TYOOL 2020.  Blame whichever buggy NFS
+  servers is actually hosting these home directories.
+
+* **No**, it is unlikely that this will ever be fixed.  We reported
+  this to SCIENCE-IT a year ago, and the issue can be demonstrated by
+  a tiny C program, but have not yet heard anything back.
+
 ## Other resources
 
 You are not expected to read/watch the following unless otherwise
