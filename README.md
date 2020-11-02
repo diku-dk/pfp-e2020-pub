@@ -149,7 +149,12 @@ export CPLUS_INCLUDE_PATH=$CUDA_DIR/include:$CPLUS_INCLUDE_PATH
 export C_INCLUDE_PATH=$CUDA_DIR/include:$C_INCLUDE_PATH
 ```
 
-### Compiling Futhark on the GPU servers
+### Compiling the Futhark compiler on the GPU servers
+
+**These instructions are only for when you need to compile Haskell
+programs (such as the Futhark compiler itself) on the servers, not if
+you just want to compile Futhark programs.  Most students will not
+need this.**
 
 The network file system used by SCIENCE-IT on the GPU servers has a
 bug which makes the `open()` syscall not set the executable bit
