@@ -20,39 +20,37 @@ course - you will be assigned reading material from papers and such.
 ## Course schedule
 
 This course schedule is tentative and will be updated as we go along.
+**The schedule below is the correct one.  Ignore any lies that other
+systems at KU tries to tell you!**
 
 The lab sessions are aimed at providing help for the weeklies and
 group project.  Do not assume you can solve them without showing up to
 the lab sessions.
 
-On Monday, we are ?.
+On Monday, the teaching consists of an online lecture (Zoom link TBA).
 
-On Wednesday, we are at ?.
+On Wednesday, we neet physically in "Kursussal 3" at Zoo (across the
+partk from DIKU).  It's full of dead animals.
 
-**Note that the order of labs and lectures are swapped for the first
-three teaching days.**
+**Note that the teaching times are different for the first three
+teaching days compared to the rest of the course.**
 
 | Date | Time | Topic | Material |
 | --- | --- | --- | --- |
-| 16/11 | 13:00-15:00 | *Cancelled* |
 | 16/11 | 15:00-17:00 | Intro, deterministic parallelism, data parallelism, Futhark | [Parallel Programming in Futhark](https://futhark-book.readthedocs.io/en/latest/), sections 1-4 | |
-| 18/11 | 10:00-12:00 | Lab (**Assignment 1 handout**) | [Futhark exercises](bootstrap-exercises.md) |
 | 18/11 | 13:00-15:00 | Cost models, advanced Futhark | [Guy Blelloch: Programming Parallel Algorithms](material/blelloch-programming-parallel-algorithms.pdf), [Prefix Sums and Their Applications](material/prefix-sums-and-their-applications.pdf), [A Provable Time and Space Efficient Implementation of NESL](material/a-provable-time-and-space-efficient-implementation-of-nesl.pdf) |
-| 23/11 | 13:00-15:00 | Lab | |
+| 18/11 | 15:00-17:00 | Lab (**Assignment 1 handout**) | [Futhark exercises](bootstrap-exercises.md) |
 | 23/11 | 15:00-17:00 | Regular flattening: moderate and incremental | [Futhark: Purely Functional GPU-Programming with Nested Parallelism and In-Place Array Updates](https://futhark-lang.org/publications/pldi17.pdf), [Incremental Flattening for Nested Data Parallelism](https://futhark-lang.org/publications/ppopp19.pdf) (particularly the latter) |
 | 25/11 | 10:00-12:00 | Full/irregular flattening | [Transforming High-Level Data-Parallel Programs into Vector Operations](material/flattening/NeslFlatTechPaper.pdf), [Harnessing the Multicores: Nested Data Parallelism in Haskell](material/flattening/harnessing-multicores.pdf) (not easy to read)|
-| 25/11 | 13:00-15:00 | Lab (**Assignment 2 handout**) | |
+| 25/11 | 13:00-17:00 | Lab (**Assignment 2 handout**) | |
 | 30/11 | 13:00-15:00 | *TBD* | |
-| 30/11 | 15:00-17:00 | Lab | |
 | 2/12 | 10:00-12:00 | Halide | [Halide: A Language and Compiler for Optimizing Parallelism, Locality and Recomputation in Image Processing Pipelines](material/halide-pldi13.pdf) | |
-| 2/12 | 13:00-15:00 | Lab (**Assignment 3 handout**) | |
+| 2/12 | 13:00-17:00 | Lab (**Assignment 3 handout**) | |
 | 7/12 | 13:00-15:00 | Polyhedral Analysis | [PMPH Dependence Analysis](material/poly/L5-LoopParI.pdf); [Sven Verdoolaege: Presburger Formulas and Polyhedral Compilation (tutorial)](material/poly/polycomp-tutorial.pdf); [Sven Verdoolaege: Presburger Sets and Relations: from High-Level Modelling to Low-Level Implementation (slides)](material/poly/poly-in-detail.pdf)
-| 7/12 | 15:00-17:00 | Lab | [Code Examples Using the ISLPY library](material/poly/poly-code-egs/) |
 | 9/12 | 10:00-12:00 | Vector programming with ISPC | [ispc: A SPMD Compiler for High-Performance CPU Programming](material/ispc_inpar_2012.pdf) |
-| 9/12 | 13:00-15:00 | Lab (**Assignment 4 handout**) | |
+| 9/12 | 13:00-17:00 | Lab (**Assignment 4 handout**) | |
 | 14/12 | 13:00-15:00 | Optimizing Locality of Reference | [Related Literature](material/Opt-Loc-Ref-Lit/) |
-| 14/12 | 15:00-17:00 | Lab (with project proposals) | |
-| 16/12 | 10:00-12:00 | Lab | |
+| 16/12 | 10:00-12:00 | Lab (with project proposals) | |
 | 16/12 | 13:00-15:00 | Lab | |
 
 After New Years, there will be no lectures, but labs will still be
@@ -60,10 +58,8 @@ held to help with the group project.
 
 | Date | Time |
 | --- | --- |
-| 4/1 | 15:00-17:00 |
-| 6/1 | 13:00-15:00 |
-| 11/1 | 15:00-17:00 |
-| 13/1 | 13:00-15:00 |
+| 6/1 | 13:00-17:00 |
+| 13/1 | 13:00-17:00 |
 
 ## Weekly assignments
 
