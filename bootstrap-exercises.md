@@ -13,7 +13,7 @@ lecture and [the Futhark book](https://futhark-book.readthedocs.io).
 Implement the following Futhark utility functions:
 
 ```
-let rotate [n] 't (r: i32) (xs: [n]t) : [n]t =
+let rotate [n] 't (r: i64) (xs: [n]t) : [n]t =
   ...
 
 let transpose [n] [m] 't (xss: [n][m]t) : [m][n]t =
