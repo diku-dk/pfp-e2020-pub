@@ -1,11 +1,8 @@
-# Bootstrap Futhark exercises for the lab on 20/11
+# Bootstrap Futhark exercises
 
-Due to unfortunate scheduling, you will likely not be able to make
-much headway on the first weekly assignment before the lecture, which
-is after the lab.  Hence you should spend the lab ensuring that you
-are able to compile, run, and benchmark Futhark programs, either on
-your own machine or on [DIKUs GPU
-cluster](https://github.com/diku-dk/pfp-e2019-pub#practical-information).
+As a warmup to the course, ensure that you are able to compile, run,
+and benchmark Futhark programs, either on your own machine or on
+[DIKUs GPU cluster](README.md#practical-information).
 
 The following exercises serve as a simple introduction to Futhark
 programming.  They should be solvable using material from the Monday
