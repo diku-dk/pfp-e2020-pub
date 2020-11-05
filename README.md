@@ -30,7 +30,7 @@ the lab sessions.
 On Monday, the teaching consists of an online lecture (Zoom link TBA).
 
 On Wednesday, we neet physically in "Kursussal 3" at Zoo (across the
-partk from DIKU).  It's full of dead animals.
+park from DIKU).  It's full of dead animals.
 
 **Note that the teaching times are different for the first three
 teaching days compared to the rest of the course.**
