@@ -27,13 +27,16 @@ The lab sessions are aimed at providing help for the weeklies and
 group project.  Do not assume you can solve them without showing up to
 the lab sessions.
 
-On Monday, the teaching consists of an online lecture (Zoom link TBA).
+The **lectures** are held online [in this Zoom
+meeting](https://ucph-ku.zoom.us/j/69083139879) (except the first
+Wednesday, see below).
 
-On Wednesday, we neet physically in "Kursussal 3" at Zoo (across the
+For the labs we meet physically in "Kursussal 3" at Zoo (across the
 park from DIKU).  It's full of dead animals.
 
 **Note that the teaching times are different for the first three
-teaching days compared to the rest of the course.**
+teaching days compared to the rest of the course, and that the lecture
+on Wednesday 18/11 from 13:00-15:00 is physical at Kursussal 3.**
 
 | Date | Time | Topic | Material |
 | --- | --- | --- | --- |
