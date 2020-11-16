@@ -173,6 +173,15 @@ $ ln -s `which ld` $HOME/.local/bin/ld.gold
 
 This will make GHC (and all other tools) use `ld` instead of `ld.gold`.
 
+Furthermore, for SCIENCE-IT reasons, you don't actually own your home directory
+on those machines, and this tends to confuse some software. Therefore, you
+should manually create a stack root before proceeding with compilation
+of the Futhark compiler:
+
+```
+mkdir $HOME/.stack
+```
+
 * **Yes**, it is absolutely ridiculous that basic filesystem
   operations don't work in TYOOL 2020.  Blame whichever buggy NFS
   servers is actually hosting these home directories.
