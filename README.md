@@ -179,7 +179,7 @@ should manually create a stack root before proceeding with compilation
 of the Futhark compiler:
 
 ```
-mkdir $HOME/.stack
+$ mkdir $HOME/.stack
 ```
 
 * **Yes**, it is absolutely ridiculous that basic filesystem
