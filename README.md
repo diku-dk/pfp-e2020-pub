@@ -46,13 +46,13 @@ on Wednesday 18/11 from 13:00-15:00 is physical at Kursussal 3.**
 | 23/11 | 15:00-17:00 | Regular flattening: moderate and incremental | [Futhark: Purely Functional GPU-Programming with Nested Parallelism and In-Place Array Updates](https://futhark-lang.org/publications/pldi17.pdf), [Incremental Flattening for Nested Data Parallelism](https://futhark-lang.org/publications/ppopp19.pdf) (particularly the latter) |
 | 25/11 | 10:00-12:00 | Full/irregular flattening | [Transforming High-Level Data-Parallel Programs into Vector Operations](material/flattening/NeslFlatTechPaper.pdf), [Harnessing the Multicores: Nested Data Parallelism in Haskell](material/flattening/harnessing-multicores.pdf) (not easy to read)|
 | 25/11 | 13:00-17:00 | Lab (**Assignment 2 handout**) | |
-| 30/11 | 13:00-15:00 | *TBD* | |
-| 2/12 | 10:00-12:00 | Halide | [Halide: A Language and Compiler for Optimizing Parallelism, Locality and Recomputation in Image Processing Pipelines](material/halide-pldi13.pdf) | |
+| 30/11 | 13:00-15:00 | Halide | [Halide: A Language and Compiler for Optimizing Parallelism, Locality and Recomputation in Image Processing Pipelines](material/halide-pldi13.pdf) |
+| 2/12 | 10:00-12:00 | Vector programming with ISPC | [ispc: A SPMD Compiler for High-Performance CPU Programming](material/ispc_inpar_2012.pdf) | |
 | 2/12 | 13:00-17:00 | Lab (**Assignment 3 handout**) | |
 | 7/12 | 13:00-15:00 | Polyhedral Analysis | [PMPH Dependence Analysis](material/poly/L5-LoopParI.pdf); [Sven Verdoolaege: Presburger Formulas and Polyhedral Compilation (tutorial)](material/poly/polycomp-tutorial.pdf); [Sven Verdoolaege: Presburger Sets and Relations: from High-Level Modelling to Low-Level Implementation (slides)](material/poly/poly-in-detail.pdf)
-| 9/12 | 10:00-12:00 | Vector programming with ISPC | [ispc: A SPMD Compiler for High-Performance CPU Programming](material/ispc_inpar_2012.pdf) |
+| 9/12 | 10:00-12:00 | Data-parallel automatic differentiation | TBA |
 | 9/12 | 13:00-17:00 | Lab (**Assignment 4 handout**) | |
-| 14/12 | 13:00-15:00 | Optimizing Locality of Reference | [Related Literature](material/Opt-Loc-Ref-Lit/) |
+| 14/12 | 13:00-15:00 | Locality of Reference | [Related Literature](material/Opt-Loc-Ref-Lit/) |
 | 16/12 | 10:00-12:00 | Lab (with project proposals) | |
 | 16/12 | 13:00-15:00 | Lab | |
 
