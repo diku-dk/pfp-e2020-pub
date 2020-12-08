@@ -75,21 +75,7 @@ latest).  You then have another week to prepare a resubmission.  That
 is, **the resubmission deadline is two weeks after the original handin
 deadline**.
 
-### Weekly 1 (due November 26)
-
-TBA
-
-### Weekly 2 (due December 3)
-
-TBA
-
-### Weekly 3 (due December 10)
-
-TBA
-
-### Weekly 4 (due December 17)
-
-TBA
+The assignment text and handouts will be linked in the schedule above.
 
 ## Group project and exam
 
