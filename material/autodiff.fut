@@ -43,16 +43,28 @@ module type ordered_field = {
 -- | A convenience parametric module for constructing field modules
 -- from the builtin numeric modules like f64 and f64.
 module mk_field_from_numeric (F: numeric) : ordered_field with t = F.t = {
-  open F
-  let zero = i64 0
-  let one = i64 1
+  type t = F.t
+  let i64 = F.i64
+  let (+) = (F.+)
+  let (-) = (F.-)
+  let (*) = (F.*)
+  let (/) = (F./)
+  let (==) = (F.==)
+  let (<) = (F.<)
+  let (>) = (F.>)
+  let (<=) = (F.<=)
+  let (>=) = (F.>=)
+  let (!=) = (F.!=)
+
+  let zero = F.i64 0
+  let one = F.i64 1
   let negate x = zero - x
   let recip x = one / x
 }
 
 -- | The module type of fields of dual numbers.  Supports the usual
 -- field operations, as well as extracting the "primal" (normal) and
--- "trangent" (differentiated) components of a computation.
+-- "tangent" (differentiated) components of a computation.
 module type dual_field = {
   -- The element type of the underlying field (the components of the
   -- dual numbers).
@@ -109,6 +121,8 @@ module mk_dual (F: ordered_field) : (dual_field with underlying = F.t) = {
   let x - y = x + negate y
   let x / y = x * recip y
 
+  -- Comparisons are straightforward and use only the primal parts.
+  -- Since we produce booleans here, the result has no tangent.
   let (x,_) == (y,_) = F.(x == y)
   let (x,_) < (y,_) = F.(x < y)
   let (x,_) > (y,_) = F.(x > y)
@@ -164,15 +178,20 @@ module mk_example (F: ordered_field) = {
   let avg [n] (xs: [n]F.t) =
     F.(sum xs / i64 n)
 
+  -- | Evaluatg a polynomial, giving the coefficients (ranging from
+  -- lowest to highest order) and the variable.
   let polynomial [k] (coeffs: [k]F.t) (x: F.t) =
     let term a i =
       F.(a * pow x i)
-    in reduce (F.+) F.zero (map2 term coeffs (iota k))
+    in sum (map2 term coeffs (iota k))
 
-  -- The L2 norm, which is a fancy word for Euclidean distance.
+  -- | The L2 norm, which is a fancy word for Euclidean distance.
   let L2 A B =
     sqrt (sum (map2 (\a b -> F.(pow (a-b) 2)) A B))
 
+  -- | Compute the distance from a polynomial approximation of a
+  -- function to the observed values of that function (ys), at certain
+  -- inputs (xs).
   let polynomial_badness [k] [n] (coeffs: [k]F.t) (xs: [n]F.t) (ys: [n]F.t) =
     L2 (map (\x -> polynomial coeffs x) xs) ys
 }
