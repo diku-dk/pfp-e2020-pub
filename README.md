@@ -51,7 +51,7 @@ on Wednesday 18/11 from 13:00-15:00 is physical at Kursussal 3.**
 | 2/12 | 13:00-17:00 | Lab ([**Assignment 3 handout**](weekly-3/)) | |
 | 7/12 | 13:00-15:00 | [Polyhedral Analysis](slides/L7-polyhedral.pdf) | [PMPH Dependence Analysis](material/poly/L5-LoopParI.pdf); [Sven Verdoolaege: Presburger Formulas and Polyhedral Compilation (tutorial)](material/poly/polycomp-tutorial.pdf); [Sven Verdoolaege: Presburger Sets and Relations: from High-Level Modelling to Low-Level Implementation (slides)](material/poly/poly-in-detail.pdf), [Code Examples](material/poly/poly-code-egs/)
 | 9/12 | 10:00-12:00 | [Data-parallel automatic differentiation](slides/L8-reverse-ad.pdf) | [Automatic Differentiation in Machine Learning: a Survey, Baydin et. al.](material/automatic_differentiation_in_ml_baydin.pdf), [autodiff.fut](material/autodiff.fut) |
-| 9/12 | 13:00-17:00 | Lab (**Assignment 4 handout**) | |
+| 9/12 | 13:00-17:00 | Lab ([**Assignment 4 handout**](weekly-4)) | |
 | 14/12 | 13:00-15:00 | Data-Parallel AD (cont), or something about Autotuning in Futhark | |
 | 16/12 | 10:00-12:00 | Lab (with project proposals) | |
 | 16/12 | 13:00-15:00 | Lab | |
