@@ -191,7 +191,8 @@ module mk_example (F: ordered_field) = {
 
   -- | Compute the distance from a polynomial approximation of a
   -- function to the observed values of that function (ys), at certain
-  -- inputs (xs).
+  -- inputs (xs).  This is a cost function that must be minimised with
+  -- respect to 'coeffs' to provide a good approximation.
   let polynomial_badness [k] [n] (coeffs: [k]F.t) (xs: [n]F.t) (ys: [n]F.t) =
     L2 (map (\x -> polynomial coeffs x) xs) ys
 }
@@ -243,8 +244,9 @@ let jacobian1 [n] (f: [n]dual_f64.t -> dual_f64.t) (xs: [n]f64) : [n]f64 =
 
 -- Now we can define a function for computing how close a
 -- polynomial-based approximation to f64.sin with gets to the true
--- values, as well as the gradients for the approximation.  This can
--- be used to drive a search procedure that calibrates the gradients.
+-- values ("badness"), as well as the gradients for the badness.  This
+-- can be used to drive a search procedure that calibrates the
+-- gradients.
 let sin_badness coeffs xs =
   let ys = map f64.sin xs
   let got = map (\x -> example_f64.polynomial coeffs x) xs
