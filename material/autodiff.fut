@@ -178,7 +178,7 @@ module mk_example (F: ordered_field) = {
   let avg [n] (xs: [n]F.t) =
     F.(sum xs / i64 n)
 
-  -- | Evaluatg a polynomial, giving the coefficients (ranging from
+  -- | Evaluate a polynomial, giving the coefficients (ranging from
   -- lowest to highest order) and the variable.
   let polynomial [k] (coeffs: [k]F.t) (x: F.t) =
     let term a i =
