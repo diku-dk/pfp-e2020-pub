@@ -111,9 +111,46 @@ this](https://github.com/exaexa/EmbedSOM/blob/b118a0eba4ad486ef32288d5c88c55ffe6
 At a high level, for each point we need to compute the
 *k*-nearest-neighbours, and then do some operations for these
 neighbours.  It would be cool to see if we could make this run faster
-than the current CPU implementation!  This is is a very *interesting*
+than the current CPU implementation!  This is a very *interesting*
 project, but it is definitely only suitable if you are very
 comfortable with applied parallel programming and reading existing C++
 code (which doesn't look that bad for C++, admittedly).  It's also
 good to have some friends - I think this project is too big for a
 single student.
+
+## Approximate Nearest Neighbor Fields (ANNFs)
+
+ANNFs is a central in computer vision, being used in many tasks such
+as inpainting in videos, super-resolution, denoising. Essentially,
+computing ANNFs consists of decomposing the image pair into overlapping
+patches, and then finding for every patch of the first image a patch
+in the second image that approximates it well. Since computing the
+best match is too (computationally) expensive---i.e., the nearest-neighbor
+patch---fast approximate methods have been proposed such as 
+[Patch Match](material/ANNFs/patch-match.pdf) or 
+[Coherency Sensitive Hashing](material/ANNFs/coherency-sens-hash.pdf) or
+[Propagation-Assisted KD Trees](material/ANNFs/annf-kdtrees.pdf).
+
+Your task would be to develop a GPU implementation (in Futhark, or CUDA,
+or in your favorite data-parallel language) for either "Patch Match" or
+"Coherency Sensitive Hashing" methods for computing ANNFs.
+If you find it helpful, you may use the framework available at
+[this github project](https://github.com/diku-dk/annfmp).
+
+## Automatic Differentiation
+
+A set of programs that use automatic differentiation and which are written in
+Jax can be found [here](https://github.com/google/jax/tree/master/examples).
+
+The task for this project is simple:
+
+* chose one or more such programs and analyse its parallelism
+
+* rewrite it in Futhark in a data-parallel fashion
+
+* apply the reverse differentiation rules presented in the last two lectures
+  (or/and invent your own) to infer a semantically-equivalent program
+  that also computes the jacobian (gradient).
+
+* validate against the Jax implementation and compare the performance
+  of the Jax and Futhark solutions.
