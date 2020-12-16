@@ -53,7 +53,7 @@ on Wednesday 18/11 from 13:00-15:00 is physical at Kursussal 3.**
 | 9/12 | 10:00-12:00 | [Data-parallel automatic differentiation](slides/L8-reverse-ad.pdf) | [Automatic Differentiation in Machine Learning: a Survey, Baydin et. al.](material/automatic_differentiation_in_ml_baydin.pdf), [autodiff.fut](material/autodiff.fut) |
 | 9/12 | 13:00-17:00 | Lab ([**Assignment 4 handout**](weekly-4)) | |
 | 14/12 | 13:00-15:00 | Data-Parallel AD (cont), or something about Autotuning in Futhark | |
-| 16/12 | 10:00-12:00 | Lab (with project proposals) | |
+| 16/12 | 10:00-12:00 | Lab (with [project proposals](project-suggestions.md) | |
 | 16/12 | 13:00-15:00 | Lab | |
 
 After New Years, there will be no lectures, but labs will still be
