@@ -154,3 +154,8 @@ The task for this project is simple:
 
 * validate against the Jax implementation and compare the performance
   of the Jax and Futhark solutions.
+
+## Bioinformatics Projects (proposed by your colleagues Xuening and Maya)
+
+There are four such bio-informatics projects that are briefly described
+in this [document](material/bioinformatics/PFP_project_proposals_Bioinf.pdf)
