@@ -87,7 +87,7 @@ own (but please talk with us first).  Since the time to work on the
 project is rather limited, and there is no possibility of
 resubmission, you should ask for help early and often if you are
 having trouble making progress.  **The project should be handed in via
-Absalon on Friday the 15th of January**.  Send an email if you have
+Absalon on Friday the 22nd of January**.  Send an email if you have
 trouble meeting this deadline.
 
 Most of the projects are about writing some parallel program, along
